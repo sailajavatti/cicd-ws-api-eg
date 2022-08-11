@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="cicd-ws-api-egFlow" doc:id="a24dfad1-fbcc-4545-a17f-f2ed7837adaf" >
+		<http:listener doc:name="Listener" doc:id="60de7201-320f-4c87-a6ef-279f2580747a" path="/cicd" config-ref="HTTP_Listener_config"/>
+		<set-payload value="This is cicd example" doc:name="Set Payload" doc:id="bb1e0bc1-fb52-469d-a6ed-6cceab2da5a6" />
+	</flow>
+</mule>
